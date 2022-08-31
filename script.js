@@ -1,6 +1,7 @@
 "use strict";
 let promise = new Promise(function (resolve, reject) {
   setTimeout(() => resolve("done"), 5000);
+  setTimeout(() => reject ('Error'), 5000)
 });
 
 promise
@@ -23,3 +24,4 @@ async function getPromise() {
   }
 }
 getPromise();
+
